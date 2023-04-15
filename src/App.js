@@ -1,16 +1,12 @@
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Login from './pages/Login'
 
 function App() {
   return (
-    <section>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-12'>
-            <h1>REAct</h1>
-          </div>
-        </div>
-      </div>
-    </section>
+    <>
+      <Login />
+    </>
   );
 }
 

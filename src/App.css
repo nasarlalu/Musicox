@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.copyright-section p {
+    text-align: center;
+    color: var(--prp-3);
+    font-size: 12px;
+    font-weight: 600;
+}

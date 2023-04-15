@@ -1,0 +1,91 @@
+:root {
+    --white: #ffffff;
+    --prp-1: #7165b1;
+    --prp-2: #322964;
+    --prp-3: #2c2b5c;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+}
+
+.txt-white {
+    color: var(--white);
+}
+
+.txt-prp {
+    color: var(--prp-3);
+}
+
+.login-section {
+    /* background-image: linear-gradient(to bottom, #5444a1, #756ab7, #9791cc, #bbb9e0, #e2e2f3); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #b8b2d8;
+    opacity: 1;
+    background-image: radial-gradient(#2d2d34 0.55px, #b8b2d8 0.55px);
+    background-size: 11px 11px;
+}
+
+.login-btn {
+    height: 3rem;
+    width: 12rem;
+    border-radius: 2rem;
+    border: 0;
+    background: var(--prp-3);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+.signin-btn {
+    height: 3rem;
+    width: 12rem;
+    border-radius: 2rem;
+    border: 3px solid var(--prp-3);
+    background: transparent;
+    color: var(--prp-3);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+
+.signin-btn:hover {
+    background: var(--prp-3);
+    color: var(--white);
+}
+
+.login-btn:hover {
+    color: var(--prp-3);
+    background: transparent;
+    border: 3px solid var(--prp-3);
+}
+
+.login-btn-container {
+    position: relative;
+}
+
+.white-dash {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/*media-query*/
+@media only screen and (max-width: 660px) {
+    .login-section {
+        text-align: center;
+    }
+}
