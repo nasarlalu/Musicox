@@ -12,15 +12,14 @@ const Home = () => {
                         <LeftBar />
                     </div>
 
-                    <div className='col-md-9 p-0'>
+                    <div className='col-md-6 p-0'>
                         <MainBar />
                     </div>
-                </div>
 
-                <div className="row">
-                    <div className='col-md-12 p-0'>
+                    <div className='col-md-3 p-0'>
                         <BottomBar />
                     </div>
+
                 </div>
 
             </div>

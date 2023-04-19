@@ -1,13 +1,12 @@
-import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import Login from './pages/Login'
-import Home from './pages/Home'
 import React, { useState, useEffect } from 'react';
 import { getTokenFromUrl } from './services/spotify'
-// import { Route, Routes } from 'react-router-dom's
 import SpotifyWebApi from "spotify-web-api-js";
 import { useDispatch } from 'react-redux'
 import { SET_USER, SET_TOKEN, SET_PLAYLISTS } from './redux/reducers'
+import './App.css';
+import Login from './pages/Login'
+import Home from './pages/Home'
+// import { Route, Routes } from 'react-router-dom's
 
 const spotify = new SpotifyWebApi();
 
@@ -56,11 +55,13 @@ function App() {
 
   return (
     <div className="app">
-      {token ? (
-        <Home />
+      {/* {token ? (
+        
       ) : (
         <Login />
-      )}
+      )} */}
+
+      <Home />
     </div>
   )
 }
