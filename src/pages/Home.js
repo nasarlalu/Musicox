@@ -1,6 +1,6 @@
 import MainBar from '../components/MainBar'
 import LeftBar from '../components/LeftBar'
-import BottomBar from '../components/BottomBar'
+import Rightbar from '../components/Rightbar'
 const Home = () => {
     return (
         <section className=''>
@@ -17,7 +17,7 @@ const Home = () => {
                     </div>
 
                     <div className='col-md-3 p-0'>
-                        <BottomBar />
+                        <Rightbar />
                     </div>
 
                 </div>

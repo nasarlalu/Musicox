@@ -22,7 +22,7 @@ const LeftBar = () => {
                 )
             })} */}
             <div className='brand-name-container'>
-                <h1 className='py-4'>MUSIOX</h1>
+                <h1 className='py-4'>MUZYX</h1>
             </div>
 
             <div className='icon-container'>
