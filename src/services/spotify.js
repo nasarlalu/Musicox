@@ -1,8 +1,8 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "http://localhost:3000";
 const clientId = "d6e86064c46649939f1ea9d7cec6e06d";
-// const clientSecret = '66be02dfd9134d6ea062aeee13c71e89';
+// const clientSecret = '6744616ea50b47cdbec66ee2a908b9e0';
 
 // const mtok = "BQCUicmE8hP9hm4KVVbqd_soCkd1A81LwSYlhauTK0bEyg1UUeTjcuZb_mBJcEQ5ulZ3o16t4KKjILEjk18cy-YIBQGIVO0fLI3EJVZpZbX3ZXNqrEOnQIQY27yf38eQWh1f8DRD0Qk8pfbDXR1GWocEHaFk4egOy06FLy2FPVqD2Ttm6AT8SlKDL3lVss_musRQmvS7K0phm5HCouvi1A"
 

@@ -11,7 +11,12 @@ const LeftBar = () => {
     const stateData = useSelector((state) => state.users)  // "state.users.value" means getting a state value of a reducer whose name is 'users'
     const playlist = stateData?.playlists?.items
 
-    console.log(playlist, 'pyyyyyyy');
+    console.log(playlist, 'playlists');
+
+
+    function displayPlaylist (){
+        console.log(stateData?.playlists?.items[0] , 'staddata');
+    }
 
     return (
         <div className="leftbar-section">
@@ -30,9 +35,9 @@ const LeftBar = () => {
                 <p>Home</p>
             </div>
 
-            <div className='icon-container'>
+            <div className='icon-container' onClick={displayPlaylist}>
                 <FaRegPlusSquare />
-                <p>Create Playlist</p>
+                <p>My Playlist</p>
             </div>
 
             <div className='icon-container'>

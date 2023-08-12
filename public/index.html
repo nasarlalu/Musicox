@@ -27,6 +27,20 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+
+  <meta http-equiv="Content-Security-Policy" content="
+      script-src 'self' https://www.google-analytics.com 'unsafe-inline';
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data: https://www.google-analytics.com https://*.spotify.com;
+      connect-src 'self' https://*.spotify.com https://www.google-analytics.com https://*.ingest.sentry.io https://stats.g.doubleclick.net;
+      frame-src https://*.spotify.com;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+      upgrade-insecure-requests;
+    " />
+
   <title>React App</title>
 </head>
 

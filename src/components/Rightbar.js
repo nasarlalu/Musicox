@@ -1,8 +1,23 @@
 import favartistImg from '../assets/images/music-player.webp'
 import ArtistImg from '../assets/images/arrahman.jpg'
+import { useSelector } from 'react-redux'
+import React, { useState, useEffect } from 'react'
 
 
 const Rightbar = () => {
+
+    const reduxData = useSelector((state) => state.users)
+
+    const [favArtsists, setFavArtsists] = useState([])
+    const artistData = reduxData?.topArtists
+
+    console.log(favArtsists, 'FavArtsistState');
+
+    useEffect(() => {
+        setFavArtsists(artistData)
+    }, [artistData])
+
+
     return (
         <div className="rightbar-section">
 
@@ -10,41 +25,24 @@ const Rightbar = () => {
                 <h1 className='pt-4 pb-2'>Favourite Artist</h1>
                 <div className="row">
 
-                    <div className='fav-artist-container'>
-                        <div className="col-md-12">
-                            <div className="d-flex align-items-center">
-                                <img src={favartistImg} alt="" className='fav-artist-img' />
-                                <div className="fav-artist-name ms-3">
-                                    <h6>Ar Rahman</h6>
-                                    <p>190 songs in library</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* {favArtsists && favArtsists?.items.map((item) => {
+                        return (
+                            <div className='fav-artist-container' key={item.name}>
+                                <div className="col-md-12">
+                                    <div className="d-flex align-items-center">
 
-                    <div className='fav-artist-container'>
-                        <div className="col-md-12">
-                            <div className="d-flex align-items-center">
-                                <img src={favartistImg} alt="" className='fav-artist-img' />
-                                <div className="fav-artist-name ms-3">
-                                    <h6>Ar Rahman</h6>
-                                    <p>190 songs in library</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                        <img src={item.images[0]?.url} alt="" className='fav-artist-img' />
 
-                    <div className='fav-artist-container'>
-                        <div className="col-md-12">
-                            <div className="d-flex align-items-center">
-                                <img src={favartistImg} alt="" className='fav-artist-img' />
-                                <div className="fav-artist-name ms-3">
-                                    <h6>Ar Rahman</h6>
-                                    <p>190 songs in library</p>
+                                        <div className="fav-artist-name ms-3">
+                                            <h6>{item.name}</h6>
+                                            <p>{item.popularity} songs in library</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        )
+                    })} */}
+
 
                 </div>
             </div>

@@ -36,6 +36,13 @@ export const userSlice = createSlice({
                 ...state,
                 discover_weekly: action.payload.discover_weekly
             }
+        },
+
+        SET_TOP_ARTIST: (state, action) => {
+            return {
+                ...state,
+                topArtists: action.payload.topArtists
+            }
         }
 
     }
@@ -43,5 +50,5 @@ export const userSlice = createSlice({
 
 })
 
-export const { SET_USER, SET_TOKEN, SET_PLAYLISTS, SET_DISCOVER_WEEKLY } = userSlice.actions
+export const { SET_USER, SET_TOKEN, SET_PLAYLISTS, SET_DISCOVER_WEEKLY, SET_TOP_ARTIST } = userSlice.actions
 export default userSlice.reducer

@@ -9,7 +9,7 @@ const Home = () => {
                 <div className='row'>
 
                     <div className='col-md-3 p-0'>
-                        <LeftBar />
+                        <LeftBar  />
                     </div>
 
                     <div className='col-md-6 p-0'>
