@@ -11,11 +11,15 @@ const Rightbar = () => {
     const [favArtsists, setFavArtsists] = useState([])
     const artistData = reduxData?.topArtists
 
-    console.log(favArtsists, 'FavArtsistState');
+    console.log(favArtsists, 'FavArtsistState')
+
+    let userImg = reduxData?.user?.images[1]?.url
+    let userName = reduxData?.user?.display_name
+
 
     useEffect(() => {
         setFavArtsists(artistData)
-    }, [artistData])
+    }, [])
 
 
     return (
@@ -25,11 +29,11 @@ const Rightbar = () => {
                 <h1 className='pt-4 pb-2'>Favourite Artist</h1>
                 <div className="row">
 
-                    {/* {favArtsists && favArtsists?.items.map((item) => {
+                    {/* {favArtsists?.items.map((item) => {
                         return (
                             <div className='fav-artist-container' key={item.name}>
                                 <div className="col-md-12">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center my-1">
 
                                         <img src={item.images[0]?.url} alt="" className='fav-artist-img' />
 
@@ -47,14 +51,14 @@ const Rightbar = () => {
                 </div>
             </div>
 
-            <div className='currently-playing-song-container my-4'>
+            <div className='currently-playing-song-container'>
                 <div className='curr-play-image'>
-                    <img src={ArtistImg} alt='' />
+                    <img src={userImg} alt='' />
                 </div>
 
                 <div className='curr-play-details'>
-                    <h6>Despacito</h6>
-                    <p>artist name</p>
+                    <h6>Welcome Back!</h6>
+                    <p>{userName}</p>
                 </div>
 
             </div>

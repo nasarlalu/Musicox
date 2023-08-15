@@ -43,6 +43,12 @@ export const userSlice = createSlice({
                 ...state,
                 topArtists: action.payload.topArtists
             }
+        },
+        SET_CURR_PLAYING_TRACK: (state, action) => {
+            return {
+                ...state,
+                myCurrentPlayingTrack: action.payload.myCurrentPlayingTrack
+            }
         }
 
     }
@@ -50,5 +56,5 @@ export const userSlice = createSlice({
 
 })
 
-export const { SET_USER, SET_TOKEN, SET_PLAYLISTS, SET_DISCOVER_WEEKLY, SET_TOP_ARTIST } = userSlice.actions
+export const { SET_USER, SET_TOKEN, SET_PLAYLISTS, SET_DISCOVER_WEEKLY, SET_TOP_ARTIST, SET_CURR_PLAYING_TRACK } = userSlice.actions
 export default userSlice.reducer

@@ -4,5 +4,6 @@ export const initialData = {
     playlists: [],
     playing: false,
     item: null,
-    topArtist: null,
+    topArtist: [],
+    myCurrentPlayingTrack: []
 }
