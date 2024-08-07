@@ -11,6 +11,7 @@ export const userSlice = createSlice({
     reducers: {
 
         SET_USER: (state, action) => { //name of reducer
+            console.log(action);
             return {
                 ...state,
                 user: action.payload.user
@@ -32,6 +33,8 @@ export const userSlice = createSlice({
         },
 
         SET_DISCOVER_WEEKLY: (state, action) => {
+
+
             return {
                 ...state,
                 discover_weekly: action.payload.discover_weekly

@@ -29,7 +29,7 @@ const Rightbar = () => {
                 <h1 className='pt-4 pb-2'>Favourite Artist</h1>
                 <div className="row">
 
-                    {/* {favArtsists?.items.map((item) => {
+                    {favArtsists?.items.map((item) => {
                         return (
                             <div className='fav-artist-container' key={item.name}>
                                 <div className="col-md-12">
@@ -45,7 +45,7 @@ const Rightbar = () => {
                                 </div>
                             </div>
                         )
-                    })} */}
+                    })}
 
 
                 </div>
